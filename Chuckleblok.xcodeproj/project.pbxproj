@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BBCC48555D172CBF1AE3911 /* Pods_Chuckleblok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048EF12ADDEBD0AC11AE3947 /* Pods_Chuckleblok.framework */; };
+		4F3F72EA1DAB57F100BA3B76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72E91DAB57F100BA3B76 /* Constants.swift */; };
+		4F3F72EC1DAB5A8800BA3B76 /* FXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */; };
+		4F3F72EE1DAB5BCC00BA3B76 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */; };
+		4F3F72F01DAB5E5B00BA3B76 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */; };
+		4F3F72F21DAB60C100BA3B76 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */; };
+		4F3F72F51DAD977A00BA3B76 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72F41DAD977A00BA3B76 /* FeedVC.swift */; };
+		4F3F72F91DADFCFE00BA3B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F72F81DADFCFE00BA3B76 /* Main.storyboard */; };
+		4F3F72FB1DAF231D00BA3B76 /* CIrcleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */; };
+		4F3F72FD1DAF48CB00BA3B76 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72FC1DAF48CB00BA3B76 /* PostCell.swift */; };
+		4F3F73001DB00B4C00BA3B76 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72FF1DB00B4C00BA3B76 /* DataService.swift */; };
+		4F3F73021DB08B8700BA3B76 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F73011DB08B8700BA3B76 /* Post.swift */; };
+		4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */; };
+		4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */; };
+		4F4E0CB11DA5FB6D00767E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */; };
+		4F4E0CB41DA5FB6D00767E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */; };
+		4FA063B91DDAA96C00D3039D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		048EF12ADDEBD0AC11AE3947 /* Pods_Chuckleblok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuckleblok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FBEE3C500B22EAFD8F962F /* Pods-Chuckleblok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuckleblok.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chuckleblok/Pods-Chuckleblok.release.xcconfig"; sourceTree = "<group>"; };
+		4F3F72E91DAB57F100BA3B76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FXView.swift; sourceTree = "<group>"; };
+		4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		4F3F72F31DAC929300BA3B76 /* lets-get-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "lets-get-social.entitlements"; sourceTree = "<group>"; };
+		4F3F72F41DAD977A00BA3B76 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		4F3F72F81DADFCFE00BA3B76 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIrcleView.swift; sourceTree = "<group>"; };
+		4F3F72FC1DAF48CB00BA3B76 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		4F3F72FF1DB00B4C00BA3B76 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4F3F73011DB08B8700BA3B76 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4F4E0CA61DA5FB6D00767E67 /* Chuckleblok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chuckleblok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F4E0CB31DA5FB6D00767E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F4E0CB51DA5FB6D00767E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 39smooth.ttf; sourceTree = "<group>"; };
+		4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D8704A0E4690CB316AC06181 /* Pods-Chuckleblok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuckleblok.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chuckleblok/Pods-Chuckleblok.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F4E0CA31DA5FB6D00767E67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBCC48555D172CBF1AE3911 /* Pods_Chuckleblok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1468A7BF3D82D39A206A2526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				048EF12ADDEBD0AC11AE3947 /* Pods_Chuckleblok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F3F72E81DAB57D200BA3B76 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F72E91DAB57F100BA3B76 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		4F3F72FE1DB00B3400BA3B76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F72FF1DB00B4C00BA3B76 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		4F413A021DA9DF70001281D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */,
+				4F4E0CB51DA5FB6D00767E67 /* Info.plist */,
+				4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F4E0C9D1DA5FB6D00767E67 = {
+			isa = PBXGroup;
+			children = (
+				4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */,
+				4F4E0CA81DA5FB6D00767E67 /* lets-get-social */,
+				4F4E0CA71DA5FB6D00767E67 /* Products */,
+				80F9DCEA15095A8C22210F92 /* Pods */,
+				1468A7BF3D82D39A206A2526 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F4E0CA71DA5FB6D00767E67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E0CA61DA5FB6D00767E67 /* Chuckleblok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F4E0CA81DA5FB6D00767E67 /* lets-get-social */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F72FE1DB00B3400BA3B76 /* Services */,
+				4F3F72F31DAC929300BA3B76 /* lets-get-social.entitlements */,
+				4F3F72E81DAB57D200BA3B76 /* Utilities */,
+				4F4E0CBD1DA602B800767E67 /* Model */,
+				4F4E0CBE1DA602C300767E67 /* VIew */,
+				4F4E0CBF1DA602CC00767E67 /* Controller */,
+				4F413A021DA9DF70001281D7 /* Resources */,
+			);
+			name = "lets-get-social";
+			path = Chuckleblok;
+			sourceTree = "<group>";
+		};
+		4F4E0CBD1DA602B800767E67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F73011DB08B8700BA3B76 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F4E0CBE1DA602C300767E67 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F72F81DADFCFE00BA3B76 /* Main.storyboard */,
+				4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */,
+				4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */,
+				4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */,
+				4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */,
+				4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */,
+				4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */,
+				4F3F72FC1DAF48CB00BA3B76 /* PostCell.swift */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		4F4E0CBF1DA602CC00767E67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */,
+				4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */,
+				4F3F72F41DAD977A00BA3B76 /* FeedVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		80F9DCEA15095A8C22210F92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8704A0E4690CB316AC06181 /* Pods-Chuckleblok.debug.xcconfig */,
+				24FBEE3C500B22EAFD8F962F /* Pods-Chuckleblok.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F4E0CA51DA5FB6D00767E67 /* Chuckleblok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F4E0CB81DA5FB6D00767E67 /* Build configuration list for PBXNativeTarget "Chuckleblok" */;
+			buildPhases = (
+				0A3FFC135F4619297AF39F5F /* [CP] Check Pods Manifest.lock */,
+				4F4E0CA21DA5FB6D00767E67 /* Sources */,
+				4F4E0CA31DA5FB6D00767E67 /* Frameworks */,
+				4F4E0CA41DA5FB6D00767E67 /* Resources */,
+				FACBD1AE4F377A5D913035C5 /* [CP] Embed Pods Frameworks */,
+				3768671BBAF44A6AA7CFD98E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chuckleblok;
+			productName = "lets-get-social";
+			productReference = 4F4E0CA61DA5FB6D00767E67 /* Chuckleblok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F4E0C9E1DA5FB6D00767E67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Paul Defilippi";
+				TargetAttributes = {
+					4F4E0CA51DA5FB6D00767E67 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V7Q65FMKJ4;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4F4E0CA11DA5FB6D00767E67 /* Build configuration list for PBXProject "Chuckleblok" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F4E0C9D1DA5FB6D00767E67;
+			productRefGroup = 4F4E0CA71DA5FB6D00767E67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F4E0CA51DA5FB6D00767E67 /* Chuckleblok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F4E0CA41DA5FB6D00767E67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4E0CB41DA5FB6D00767E67 /* LaunchScreen.storyboard in Resources */,
+				4FA063B91DDAA96C00D3039D /* GoogleService-Info.plist in Resources */,
+				4F4E0CB11DA5FB6D00767E67 /* Assets.xcassets in Resources */,
+				4F3F72F91DADFCFE00BA3B76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3FFC135F4619297AF39F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3768671BBAF44A6AA7CFD98E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chuckleblok/Pods-Chuckleblok-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FACBD1AE4F377A5D913035C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chuckleblok/Pods-Chuckleblok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F4E0CA21DA5FB6D00767E67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3F72F01DAB5E5B00BA3B76 /* FancyField.swift in Sources */,
+				4F3F72EC1DAB5A8800BA3B76 /* FXView.swift in Sources */,
+				4F3F72EE1DAB5BCC00BA3B76 /* RoundBtn.swift in Sources */,
+				4F3F73021DB08B8700BA3B76 /* Post.swift in Sources */,
+				4F3F72F21DAB60C100BA3B76 /* FancyButton.swift in Sources */,
+				4F3F72F51DAD977A00BA3B76 /* FeedVC.swift in Sources */,
+				4F3F73001DB00B4C00BA3B76 /* DataService.swift in Sources */,
+				4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */,
+				4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */,
+				4F3F72FB1DAF231D00BA3B76 /* CIrcleView.swift in Sources */,
+				4F3F72EA1DAB57F100BA3B76 /* Constants.swift in Sources */,
+				4F3F72FD1DAF48CB00BA3B76 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F4E0CB31DA5FB6D00767E67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F4E0CB61DA5FB6D00767E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F4E0CB71DA5FB6D00767E67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F4E0CB91DA5FB6D00767E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8704A0E4690CB316AC06181 /* Pods-Chuckleblok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = V7Q65FMKJ4;
+				INFOPLIST_FILE = Chuckleblok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Chuckleblok";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4F4E0CBA1DA5FB6D00767E67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FBEE3C500B22EAFD8F962F /* Pods-Chuckleblok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = V7Q65FMKJ4;
+				INFOPLIST_FILE = Chuckleblok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Chuckleblok";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F4E0CA11DA5FB6D00767E67 /* Build configuration list for PBXProject "Chuckleblok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4E0CB61DA5FB6D00767E67 /* Debug */,
+				4F4E0CB71DA5FB6D00767E67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F4E0CB81DA5FB6D00767E67 /* Build configuration list for PBXNativeTarget "Chuckleblok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4E0CB91DA5FB6D00767E67 /* Debug */,
+				4F4E0CBA1DA5FB6D00767E67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F4E0C9E1DA5FB6D00767E67 /* Project object */;
+}
