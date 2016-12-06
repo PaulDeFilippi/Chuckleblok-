@@ -185,7 +185,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-x9-YBx" customClass="FXView" customModule="Chuckleblok" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="y7o-f2-MN2">
                                         <rect key="frame" x="16" y="20" width="40" height="34"/>
@@ -199,7 +199,7 @@
                                         </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKLEBLOK FEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-Hv-7en">
-                                        <rect key="frame" x="67.5" y="24.5" width="240.5" height="25"/>
+                                        <rect key="frame" x="68" y="24.5" width="240.5" height="25"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -211,11 +211,11 @@
                                     <constraint firstItem="y7o-f2-MN2" firstAttribute="leading" secondItem="oSj-x9-YBx" secondAttribute="leading" constant="16" id="4IG-qu-e8I"/>
                                     <constraint firstItem="Vad-Hv-7en" firstAttribute="centerY" secondItem="y7o-f2-MN2" secondAttribute="centerY" id="CcO-I0-dGK"/>
                                     <constraint firstItem="Vad-Hv-7en" firstAttribute="centerX" secondItem="oSj-x9-YBx" secondAttribute="centerX" id="lvS-hR-Vvw"/>
-                                    <constraint firstAttribute="height" constant="65" id="qaS-WT-Fbm"/>
+                                    <constraint firstAttribute="height" constant="60" id="qaS-WT-Fbm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egL-vm-nuh" customClass="FXView" customModule="Chuckleblok" customModuleProvider="target">
-                                <rect key="frame" x="16" y="81" width="343" height="65"/>
+                                <rect key="frame" x="16" y="76" width="343" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aut-bs-YMm">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
@@ -232,7 +232,7 @@
                                                     <outletCollection property="gestureRecognizers" destination="QER-tP-bY4" appends="YES" id="DXq-Mg-BJn"/>
                                                 </connections>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add a caption" placeholder="Add a caption" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-69-eBO" customClass="FancyField" customModule="Chuckleblok" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add a caption" placeholder="Add a caption" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-69-eBO" customClass="FancyField" customModule="Chuckleblok" customModuleProvider="target">
                                                 <rect key="frame" x="57" y="0.0" width="213" height="49"/>
                                                 <color key="textColor" red="0.41179102659225464" green="0.27457976341247559" blue="0.0090579064562916756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="22"/>
@@ -263,7 +263,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="358" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QtK-ms-pDW">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
+                                <rect key="frame" x="0.0" y="157" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="hEe-Zv-c8w" customClass="PostCell" customModule="Chuckleblok" customModuleProvider="target">
@@ -274,10 +274,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-sw-V7r" customClass="FXView" customModule="Chuckleblok" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="342"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="344"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-Zb-N8n">
-                                                            <rect key="frame" x="8" y="8" width="327" height="294"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="296"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e76-cq-NJY">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="70"/>
@@ -305,23 +305,26 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-bn-432">
-                                                                    <rect key="frame" x="0.0" y="78" width="327" height="0.0"/>
+                                                                    <rect key="frame" x="0.0" y="78" width="327" height="175"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="175" id="TvP-cD-3Ae"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-sG-b1z">
-                                                                    <rect key="frame" x="0.0" y="86" width="327" height="208"/>
+                                                                    <rect key="frame" x="0.0" y="261" width="327" height="35"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Yv4-8R-L09"/>
+                                                                        <constraint firstAttribute="height" constant="35" id="SvB-h2-KkR"/>
                                                                     </constraints>
-                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                                                     <color key="textColor" red="0.27975243330001831" green="0.18982237577438354" blue="0.027187641710042953" alpha="0.83310145547945202" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="12"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-j1-eLU">
-                                                            <rect key="frame" x="252.5" y="310" width="82.5" height="24"/>
+                                                            <rect key="frame" x="252.5" y="312" width="82.5" height="24"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0q-an-5Df">
                                                                     <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
@@ -413,7 +416,7 @@
         <image name="bg2" width="750" height="1334"/>
         <image name="empty-heart" width="87" height="77"/>
         <image name="f" width="352" height="328"/>
-        <image name="placeholder" width="567" height="312"/>
+        <image name="placeholder" width="550" height="551"/>
         <image name="profile" width="722" height="1026"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>

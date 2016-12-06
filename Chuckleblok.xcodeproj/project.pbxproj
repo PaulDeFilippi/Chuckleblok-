@@ -23,7 +23,7 @@
 		4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */; };
 		4F4E0CB11DA5FB6D00767E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */; };
 		4F4E0CB41DA5FB6D00767E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */; };
-		4FA063B91DDAA96C00D3039D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */; };
+		4F9711681DE127200049EB89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F9711671DE127200049EB89 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +47,8 @@
 		4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4E0CB31DA5FB6D00767E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4E0CB51DA5FB6D00767E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 39smooth.ttf; sourceTree = "<group>"; };
-		4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F9711671DE127200049EB89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F9711691DE129F80049EB89 /* Chuckleblok.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Chuckleblok.entitlements; path = Chuckleblok/Chuckleblok.entitlements; sourceTree = "<group>"; };
 		D8704A0E4690CB316AC06181 /* Pods-Chuckleblok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuckleblok.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chuckleblok/Pods-Chuckleblok.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */,
+				4F9711671DE127200049EB89 /* GoogleService-Info.plist */,
 				4F4E0CB51DA5FB6D00767E67 /* Info.plist */,
-				4FA063B81DDAA96C00D3039D /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -101,7 +101,7 @@
 		4F4E0C9D1DA5FB6D00767E67 = {
 			isa = PBXGroup;
 			children = (
-				4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */,
+				4F9711691DE129F80049EB89 /* Chuckleblok.entitlements */,
 				4F4E0CA81DA5FB6D00767E67 /* lets-get-social */,
 				4F4E0CA71DA5FB6D00767E67 /* Products */,
 				80F9DCEA15095A8C22210F92 /* Pods */,
@@ -210,7 +210,7 @@
 					4F4E0CA51DA5FB6D00767E67 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V7Q65FMKJ4;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -243,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4E0CB41DA5FB6D00767E67 /* LaunchScreen.storyboard in Resources */,
-				4FA063B91DDAA96C00D3039D /* GoogleService-Info.plist in Resources */,
+				4F9711681DE127200049EB89 /* GoogleService-Info.plist in Resources */,
 				4F4E0CB11DA5FB6D00767E67 /* Assets.xcassets in Resources */,
 				4F3F72F91DADFCFE00BA3B76 /* Main.storyboard in Resources */,
 			);
@@ -431,12 +431,17 @@
 			baseConfigurationReference = D8704A0E4690CB316AC06181 /* Pods-Chuckleblok.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEVELOPMENT_TEAM = V7Q65FMKJ4;
+				CODE_SIGN_ENTITLEMENTS = Chuckleblok/Chuckleblok.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = Chuckleblok/Chuckleblok.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Defilippi (V7Q65FMKJ4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Chuckleblok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Chuckleblok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -446,12 +451,17 @@
 			baseConfigurationReference = 24FBEE3C500B22EAFD8F962F /* Pods-Chuckleblok.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEVELOPMENT_TEAM = V7Q65FMKJ4;
+				CODE_SIGN_ENTITLEMENTS = Chuckleblok/Chuckleblok.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = Chuckleblok/Chuckleblok.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Defilippi (V7Q65FMKJ4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Chuckleblok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.Chuckleblok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
