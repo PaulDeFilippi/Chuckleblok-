@@ -29,23 +29,23 @@ class SignInVC: UIViewController {
         }
     }
 
-    @IBAction func facebookBtnPressed(_ sender: AnyObject) {
-        
-        let facebookLogin = FBSDKLoginManager()
-        
-        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-            if error != nil {
-                print("PAUL: Unable to authenticate with Facebook - \(error)")
-            } else if result?.isCancelled == true {
-                print("PAUL: User cancelled Facebook authentication")
-            } else {
-                print("PAUL: Successfully authenticated with Facebook")
-                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-                self.firebaseAuth(credential)
-            }
-        }
-    
-    }
+//    @IBAction func facebookBtnPressed(_ sender: AnyObject) {
+//        
+//        let facebookLogin = FBSDKLoginManager()
+//        
+//        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+//            if error != nil {
+//                print("PAUL: Unable to authenticate with Facebook - \(error)")
+//            } else if result?.isCancelled == true {
+//                print("PAUL: User cancelled Facebook authentication")
+//            } else {
+//                print("PAUL: Successfully authenticated with Facebook")
+//                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+//                self.firebaseAuth(credential)
+//            }
+//        }
+//    
+//    }
     
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
